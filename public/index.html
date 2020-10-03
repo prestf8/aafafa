@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <section class="display">
+        <h1 class="display__title">Password Generator</h1>
+
+        <div class="display_password-container">
+          <input type="text" class="display__password" readonly></input>
+          <p class="display__copy">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+        </div>
+      </section>
+      <form class="settings">
+        <div class="settings__length">
+          <label class="settings__label">Password length</label>
+          <input id="length" type="number" class="settings__input" max="20" min="5" value="20"/>
+        </div>
+        <div class="settings__uppercase">
+          <label class="settings__label">Include Uppercase letters</label>
+          <input id="uppercase" type="checkbox" class="settings__input" checked />
+        </div>
+        <div class="settings__lowercase">
+          <label class="settings__label">Include lowercase letters</label>
+          <input id="lowercase" type="checkbox" class="settings__input" checked />
+        </div> 
+        <div class="settings__numbers">
+          <label class="settings__label">Include numbers</label>
+          <input id="numbers" type="checkbox" class="settings__input" checked />
+        </div>
+        <div class="settings__symbols">
+          <label class="settings__label">Include symbols</label>
+          <input id="symbols" type="checkbox" class="settings__input" checked />
+        </div>  
+        <button type="submit" class="settings__submit">Generate password</button>
+      </form>
+    </main>
+    <script defer src="https://kit.fontawesome.com/3c0d58b00f.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+  </body>
+</html>   
